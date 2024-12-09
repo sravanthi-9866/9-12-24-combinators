@@ -1,0 +1,25 @@
+div > p {
+    color: green;
+  }
+  div p {
+    color: blue;
+    background-color: antiquewhite;
+  }
+  div > p {
+    color: black;
+    background-color: blueviolet;
+  }
+  h2 + p {
+    color: green;
+    background-color: beige;
+  }
+  h2 ~ p {
+    color: purple;
+    background-color: rgb(76, 0, 255);
+  }
+  div > p + p {
+    color: orange;
+    background-color: aqua;
+  }
+
+

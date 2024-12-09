@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css task-9</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--question-1-->
+    <!--expalin how the descendant combinator works in css and provide an example?-->
+    <!--question-2-->
+    <!--how does the adjacent sibling selector(+) work in css? provide an example where it selects only first sibling?-->
+    <!--question-3-->
+    <!--how does the general sibling selector(~) work? provide an example where it selects all sibling elements following a specific element-->
+    <!--question-4-->
+    <!--can you combine multiple combinators in one rule to target a specific element? provide an example where you use both the child and sibling combinators together-->
+    <!--question-5-->
+    <!--what will happen if you try to use a css combinator with a parent element that doesn't exist in the HTML? provide  an example and explain the result -->
+<div>
+    <p>This text will be green because it is a direct child of the div.</p>
+    <section>
+      <p>This text will be blue because it is a descendant of the div, but not a direct child.</p>
+    </section>
+</div>
+<div>
+    <p>This paragraph is a direct child of the div and will be blue.</p>
+    <section>
+      <p>This paragraph is inside a section, not a direct child of the div, so it won't be blue.</p>
+    </section>
+</div>
+<div>
+    <h2>This is a heading</h2>
+    <p>This paragraph is immediately after the h2 and will be green.</p>
+    <p>This paragraph is not immediately after the h2, so it won't be green.</p>
+  </div>
+<div> 
+    <h2>This is a heading</h2>
+    <p>This paragraph is a sibling of the h2 and will be purple.</p>
+    <p>This paragraph is also a sibling of the h2 and will be purple.</p>
+  </div>
+<div>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph and will be orange because it is a direct child and follows another paragraph.</p>
+</div>
+</body>
+</html>
